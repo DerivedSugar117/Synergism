@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>Synergism</title>
+    </head>
+
+
+    <body>
+        <div id="resources">
+            <div id="coins">
+                <img id="coinImg" src="/images/coin.png"><span id="coinAmount">100</span>
+            </div>
+        </div>
+
+        <div id="tab">
+            <button id="buildingsBtn" onclick="showBuildingsTab()">Buildings</button>
+            <button id="upgradesBtn" onclick="showUpgradesTab()">Upgrades</button>
+        </div>
+
+        <div id="buildingsContainer">
+            <div id="coinBuildings">
+                <div id="coinBuilding1">
+                    <img id="workerImg" src="/images/worker.png">
+                    <p id="coinBuilding1Amount">Workers: <span id="coinBuilding1AMOUNT">0</span></p>
+                    <button class="coinBuildingPurchaseBtn" id="coinBuilding1Button" onclick="buyCoinBuilding1()"><span id="coinBuilding1Cost"></span> coins.</button>
+                    <p class="coinBuildingCPS" id="coinBuilding1cps">Coins/Sec: <span id="coinBuilding1CPS"></span></p>
+                </div>
+                <div id="coinBuilding2">
+                    <img id="investmentImg" src="/images/investment.png">
+                    <p id="coinBuilding2Amount">Investmenst: <span id="coinBuilding2AMOUNT">0</span></p>
+                    <button  class="coinBuildingPurchaseBtn" id="coinBuilding2Button" onclick="buyCoinBuilding2()"><span id="coinBuilding2Cost"></span> coins.</button>
+                    <p class="coinBuildingCPS" id="coinBuilding2cps">Coins/Sec: <span id="coinBuilding2CPS"></span></p>
+                </div>
+                <div id="coinBuilding3">
+                    <img id="printerImg" src="/images/printer.png">
+                    <p id="coinBuilding3Amount">Printers: <span id="coinBuilding3AMOUNT">0</span></p>
+                    <button class="coinBuildingPurchaseBtn" id="coinBuilding3Button" onclick="buyCoinBuilding3()"><span id="coinBuilding3Cost"></span> coins.</button>
+                    <p class="coinBuildingCPS" id="coinBuilding3cps">Coins/Sec: <span id="coinBuilding3CPS"></span></p>
+                </div>
+                <div id="coinBuilding4">
+                    <img id="coilMintImg" src="/images/coil-mint.png">
+                    <p id="coinBuilding4Amount">Coil mints: <span id="coinBuilding4AMOUNT">0</span></p>
+                    <button class="coinBuildingPurchaseBtn" id="coinBuilding4Button" onclick="buyCoinBuilding4()"><span id="coinBuilding4Cost"></span> coins.</button>
+                    <p class="coinBuildingCPS" id="coinBuilding4cps">Coins/Sec: <span id="coinBuilding4CPS"></span></p>
+                </div>
+                <div id="coinBuilding5">
+                    <img id="alchemyImg" src="/images/alchemy.png">
+                    <p id="coinBuilding5Amount">Alchemies: <span id="coinBuilding5AMOUNT">0</span></p>
+                    <button class="coinBuildingPurchaseBtn" id="coinBuilding5Button" onclick="buyCoinBuilding5()"><span id="coinBuilding5Cost"></span> coins.</button>
+                    <p class="coinBuildingCPS" id="coinBuilding5cps">Coins/Sec: <span id="coinBuilding5CPS"></span></p>
+                </div>
+
+                <div id="acceleratorBuildings">
+                    <div id="accelerator">
+                        <img id="acceleratorImg" src="/images/accelerator.png">
+                        <p id="acceleratorAmount">Accelerators: <span id="acceleratorAMOUNT">0</span></p>
+                        <button class="coinBuildingPurchaseBtn" id="acceleratorButton" onclick="buyAccelerator()"><span id="acceleratorCost"></span> coins.</button>
+                        <p class="coinBuildingCPS" id="acceleratorPower">Acceleration Power: <span id="acceleratorPOW"></span></p>
+                    </div>
+                    <div id="multiplier">
+                        <img id="multiplierImg" src="/images/multiplier.png">
+                        <p id="multiplierAmount">Multipliers: <span id="multiplierAMOUNT">0</span></p>
+                        <button class="coinBuildingPurchaseBtn" id="multiplierButton" onclick="buyMultiplier()"><span id="multiplierCost"></span> coins.</button>
+                        <p class="coinBuildingCPS" id="multiplierPower">Multiplier Power: <span id="multiplierPOW"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradesContainer">
+            <img id="coinUpgrade1" src="/images/coinUpgrade1.png" onclick="buyCoinUpgrade1()">
+            <span class="tooltip" id="coinUpgrade1Tooltip">Increases Worker production by 1e6</span><br>
+            <span class="tooltipCost" id="coinUpgrade1TooltipCost">Cost: 1e6</span>
+        </div>
+
+
+        <script src="index.js"></script>
+    </body>
+</html>
